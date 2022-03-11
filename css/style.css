@@ -12,7 +12,7 @@ body{
 
 .margin{
     padding-bottom: 50px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .quemsomos-title{
@@ -22,4 +22,13 @@ body{
 
 .parceiros{
     background-color: rgb(179, 147, 253);
+}
+
+.serviços{
+    background-color: rgb(252, 245, 223);
+}
+
+.rodape{
+    font-family: 'Arial Black', 'Arial Bold';
+    font-size: 25px;
 }
