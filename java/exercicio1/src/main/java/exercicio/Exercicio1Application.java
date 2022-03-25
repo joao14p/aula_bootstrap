@@ -44,25 +44,7 @@ try(BufferedReader br = new BufferedReader(new FileReader(veiculosCSV))){
 			}catch(Exception e) {
 				System.out.println("Erro ao ler o arquivo");
 			}
-try(BufferedReader br1 = new BufferedReader(new FileReader(modelosCSV))){
-				
-				String line1 = br1.readLine();
-				while (line1 != null) {
-					
-					String[] fields = line1.split(";");
-					String modelo = fields[0];
-					double consumoEtanol = Double.parseDouble(fields[1]);
-					double consumoGasolina = Double.parseDouble(fields[2]);
-					double capacidade = Double.parseDouble(fields[3]);
-					
-					list1.add(new Veiculos(modelo, consumoEtanol, consumoGasolina, capacidade));
-					
-					line1 = br1.readLine();
-				}
-			}
-			System.out.println(list.toString());
-			System.out.println(list1.toString());
-			}
+
 	
 		catch(Exception e) {
 			System.out.println("Erro ao ler o arquivo");
