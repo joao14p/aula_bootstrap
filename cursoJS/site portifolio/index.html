@@ -19,21 +19,37 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            
+        }
+        .vid video {
             position: fixed;
             top: 0;
             left: 0;
             object-fit: cover;
+            width: 100%;
+        }
+        .vid .content {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
         }
         
     </style>
 </head>
 <body>
-    
     <div class="vid">
-        <H1>Portifólio dos Bolados</H1>
-        <video autoplay muted loop src="C:\Users\joaop\Documents\downloads\home-bg-top.mp4">
-            <source  type="video/mp4">
+        
+        <video autoplay muted loop >
+            <source src="videos/home-bg-top.mp4" type="video/mp4">
         </video>
+        <div class="content">
+            <h1>Portifólio dos Bolados</h1>
+            <p>Aqui terá uma breve descrição dos nossos produtos e 
+                um resumo sobre a nossa empresa e serviços disponíveis.</p>
+        </div>
 
     </div>
 </body>
