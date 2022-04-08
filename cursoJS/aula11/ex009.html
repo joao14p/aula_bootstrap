@@ -8,7 +8,26 @@
 </head>
 <body>
     <h1>Sistema de averiguação de Nacionalidade</h1>
+    Digite em que país Você mora: <input type="text" name="txtp" id="txtp"> 
+    <input type="button" value="Conferir Nacionalidade" onclick="conferir()">
+    <div id="res">
 
+    </div>
+    <script>
+        function conferir(){
+            var txtc = window.document.querySelector('input#txtp')
+            var res = window.document.querySelector('div#res')
+            var nac = txtc.value
+            if( nac != "brasil" && nac != "Brasil" && nac != "BRASIL" 
+            && nac != "BRAZIL" && nac != "Brazil" && nac != "brazil"){
+                res.innerHTML = `Você está no(a) ${nac}, portanto você é <strong>Estrangeiro</strong>!`
+            } else {
+                res.innerHTML = `Você está no ${nac}, portanto você é <strong>Brasileiro</strong>!`
+            }
+
+        }
+
+    </script>
     
 </body>
 </html>
